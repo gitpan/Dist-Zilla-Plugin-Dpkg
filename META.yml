@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: https://github.com/gphat/dist-zilla-plugin-dpkg
   repository: https://github.com/gphat/dist-zilla-plugin-dpkg.git
-version: 0.01
+version: 0.02

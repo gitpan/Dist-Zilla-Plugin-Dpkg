@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Dpkg;
 {
-  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.01';
+  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.02';
 }
 use Moose;
 
@@ -193,6 +193,19 @@ has 'package_section' => (
 );
 
 
+has 'package_shell_name' => (
+    is => 'ro',
+    isa => 'Str',
+    lazy => 1,
+    default => sub {
+        my $self = shift;
+        my $name = uc($self->zilla->name);
+        $name =~ s/-/_/g;
+        return $name;
+    }
+);
+
+
 has 'postinst_template' => (
     is => 'ro',
     isa => 'Str',
@@ -251,6 +264,7 @@ sub setup_installer {
         package_name    => $self->package_name,
         package_priority=> $self->package_priority,
         package_section  => $self->package_section,
+        package_shell_name => $self->package_shell_name,
         version         => $self->zilla->version
     );
     
@@ -308,7 +322,7 @@ Dist::Zilla::Plugin::Dpkg - Generate Dpkg files for your perl module
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -348,6 +362,8 @@ to any templates that are processed, using attributes as values:
 =item package_name
 
 =item package_section
+
+=item package_shell_name
 
 =item version
 
@@ -472,6 +488,12 @@ L<http://www.debian.org/doc/debian-policy/ch-archive.html#s-priorities>.
 The section of the package we're making. Defaults to C<lib>.
 
 L<http://www.debian.org/doc/debian-policy/ch-archive.html#s-subsections>.
+
+=head2 package_shell_name
+
+The name of this package converted to a form suitable for environment variable
+use. Foo-Bar becomes FOO_BAR.  Defaults to C<name> upper-cased with hyphens
+converted to underscores.
 
 =head2 postinst_template
 

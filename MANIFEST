@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.json
@@ -5,6 +6,7 @@ META.yml
 Makefile.PL
 README
 README.mkdn
+foo.sh
 lib/Dist/Zilla/Plugin/Dpkg.pm
 t/load.t
 t/release-pod-syntax.t
