@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Dpkg;
 {
-  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.02';
+  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.03';
 }
 use Moose;
 
@@ -322,7 +322,7 @@ Dist::Zilla::Plugin::Dpkg - Generate Dpkg files for your perl module
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
