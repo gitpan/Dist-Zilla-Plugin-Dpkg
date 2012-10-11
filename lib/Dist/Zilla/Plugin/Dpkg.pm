@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Dpkg;
 {
-  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.03';
+  $Dist::Zilla::Plugin::Dpkg::VERSION = '0.04';
 }
 use Moose;
 
@@ -322,7 +322,7 @@ Dist::Zilla::Plugin::Dpkg - Generate Dpkg files for your perl module
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -572,7 +572,7 @@ Cory G Watson <gphat@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Infinity Interactive, Inc.
+This software is copyright (c) 2012 by Infinity Interactive, Inc.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
