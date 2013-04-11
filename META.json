@@ -4,7 +4,7 @@
       "Cory G Watson <gphat@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
    "license" : [
       "perl_5"
    ],
@@ -21,30 +21,30 @@
       },
       "runtime" : {
          "requires" : {
-            "Dist::Zilla::File::InMemory" : "0",
-            "Dist::Zilla::Role::InstallTool" : "0",
-            "Moose" : "0",
-            "Text::Template" : "0"
+            "Dist::Zilla::File::InMemory" : 0,
+            "Dist::Zilla::Role::InstallTool" : 0,
+            "Moose" : 0,
+            "Text::Template" : 0
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0"
+            "Test::More" : 0
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/gphat/dist-zilla-plugin-dpkg/issues"
+         "web" : "https://github.com/tripside/dist-zilla-plugin-dpkg/issues"
       },
-      "homepage" : "https://github.com/gphat/dist-zilla-plugin-dpkg",
+      "homepage" : "https://github.com/tripside/dist-zilla-plugin-dpkg",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/gphat/dist-zilla-plugin-dpkg.git",
-         "web" : "https://github.com/gphat/dist-zilla-plugin-dpkg"
+         "url" : "https://github.com/tripside/dist-zilla-plugin-dpkg.git",
+         "web" : "https://github.com/tripside/dist-zilla-plugin-dpkg"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
 
